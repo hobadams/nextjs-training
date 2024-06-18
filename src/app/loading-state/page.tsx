@@ -1,7 +1,9 @@
+export const dynamic = 'force-dynamic';
+
 const getContent = async (): Promise<string> => {
-  console.log(1);
+  console.log('getting content');
   await new Promise(resolve => setTimeout(resolve, 3000)); // 3 sec
-  console.log(2);
+  console.log('finished getting content');
 
   // throw new Error('Failed to fetch content');
 
@@ -9,7 +11,6 @@ const getContent = async (): Promise<string> => {
 }
 
 export default async function Page() {
-
   const content = await getContent()
 
   return <h1>{content}</h1>

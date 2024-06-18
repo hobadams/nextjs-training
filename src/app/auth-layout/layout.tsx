@@ -7,11 +7,11 @@ export default function Layout({
 }>) {
 
   // randomly get true or false
-  const isAuth = Math.random() < 0.5;
+  const hasPermission = Math.random() < 0.5;
 
-  console.log('checking auth status', { isAuth })
+  console.log('checking auth status', { hasPermission })
 
-  if (!isAuth) {
+  if (!hasPermission) {
     return (
       <>
         <Nav />
