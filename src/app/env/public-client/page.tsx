@@ -21,7 +21,7 @@ export default function Page() {
 
   return (
     <>
-      <h1>Public dynamic</h1>
+      <h1>Public client</h1>
       <p>- {process.env.NEXT_PUBLIC_TEST_VAR}</p>
       <p>- {process.env[varName]}</p>
       <p>- {process.env[privateVarName]}</p>
