@@ -1,0 +1,11 @@
+version: '3.9'
+services:
+  training:
+    container_name: 'training'
+    image: training
+    build:
+      dockerfile: Dockerfile
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env.docker
